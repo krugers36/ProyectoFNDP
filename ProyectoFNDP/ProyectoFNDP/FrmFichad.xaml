@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFNDP.FrmFichad"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ficha medica" HorizontalTextAlignment="Center" TextColor="Black"
+         FontSize="25" ></Label>
+
+            <Entry x:Name="txtcodigo"  Placeholder="Ficha: "></Entry>
+            <Entry x:Name="txtpaciente"  Placeholder="Paciente: "></Entry>
+            <Entry x:Name="txtresultado"  Placeholder="Resultado: "></Entry>
+            <Entry x:Name="txtenfermedad"  Placeholder="Enfermedad: "></Entry>
+            <Entry x:Name="txtmedicamentos"  Placeholder="Medicamentos: "></Entry>
+            <Entry x:Name="txtalergias"  Placeholder="Alergias: "></Entry>
+            <Entry x:Name="txtantedecentes"  Placeholder="Antecedentes Medicos: "></Entry>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Insertar dato" x:Name="btnguardar" Clicked="btnGuardar_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

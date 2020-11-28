@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFNDP.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" />
+        <Label Text="Login Covid-19" HorizontalTextAlignment="Center" TextColor="Black"
+         FontSize="25" ></Label>
+
+        <Entry x:Name="txtUser" Placeholder="Ingreso el usuario"></Entry>
+
+        <Entry x:Name="txtclave" Placeholder="Ingreso la clave" IsPassword="True" ></Entry>
+
+        <Button x:Name="btnabrir" Text="Login" Clicked="btnabrir_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
